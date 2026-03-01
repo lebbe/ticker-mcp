@@ -12,16 +12,14 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    // Emit
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
+    // Emit — disabled because we run .ts directly via Node strip-types
+    "noEmit": true,
 
     // Interop
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
-    "allowImportingTsExtensions": false,
+    "allowImportingTsExtensions": true,
 
     // Strict type-checking
     "strict": true,

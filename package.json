@@ -8,9 +8,8 @@
     "ticker-mcp": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "check": "tsc",
     "start": "node --experimental-strip-types src/index.ts",
-    "start:built": "node dist/index.js",
     "test-tool": "node --experimental-strip-types tests/test-tools.ts"
   },
   "repository": {

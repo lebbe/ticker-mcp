@@ -1,6 +1,6 @@
 import YahooFinance from "yahoo-finance2";
 
-const yf = new YahooFinance();
+const yf = new YahooFinance({ suppressNotices: ["yahooSurvey"] });
 
 /**
  * Search for a company and return matching equity tickers.
