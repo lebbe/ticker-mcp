@@ -1,0 +1,35 @@
+{
+  "name": "ticker-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ticker-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-strip-types src/index.ts",
+    "start:built": "node dist/index.js",
+    "test-tool": "node --experimental-strip-types tests/test-tools.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebbe/ticker-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lebbe/ticker-mcp/issues"
+  },
+  "homepage": "https://github.com/lebbe/ticker-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@types/node": "^25.3.3",
+    "cheerio": "^1.2.0",
+    "typescript": "^5.9.3",
+    "yahoo-finance2": "^3.13.1",
+    "zod": "^4.3.6"
+  }
+}
